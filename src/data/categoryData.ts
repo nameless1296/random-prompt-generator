@@ -75,8 +75,8 @@ export const defaultCategories: TagCategory[] = [
         id: 'age_appearance',
         name: '年龄外观',
         tags: [
-          'child','teenager','young adult','adult','middle-aged',
-          'elderly','baby','toddler','infant','age progression',
+          'adult','middle-aged',
+          'elderly','age progression',
           'age regression','age difference','older','younger',
           'youthful','ageless','immortal appearance','ancient',
           'age spot','laugh lines','crow\'s feet',
