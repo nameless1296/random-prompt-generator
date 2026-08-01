@@ -304,11 +304,6 @@ export default function App() {
             <span className="text-[13px] font-bold text-white/90">Danbooru-style 随机提示词</span>
             <span className="text-[10px] text-white/20 hidden md:inline ml-1">{totalN.toLocaleString()} tags · {TOTAL_RULES.toLocaleString()} rules</span>
           </div>
-          <button onClick={() => setNsfw(n => !n)}
-            className={`h-7 rounded-full px-2.5 text-[11px] font-semibold flex items-center gap-1.5 border ${nsfw ? 'bg-rose-500/10 border-rose-500/25 text-rose-400' : 'bg-white/[.03] border-white/[.06] text-white/25 hover:text-white/40'}`}>
-            <span className={`w-1.5 h-1.5 rounded-full ${nsfw ? 'bg-rose-500' : 'bg-white/15'}`} />
-            NSFW
-          </button>
         </div>
       </header>
 
@@ -517,8 +512,14 @@ export default function App() {
                   className="w-full flex items-center justify-between px-4 h-9 hover:bg-white/[.015]">
                     <span className="text-[10px] text-white/80 font-semibold">🕐 历史 ({hist.length})</span>
                   <div className="flex items-center gap-2">
-                    <span onClick={e => { e.stopPropagation(); setHist([]); }} className="text-[9px] text-white/80 hover:text-white cursor-pointer">清空</span>
                     <svg className={`w-3 h-3 text-white/80 ${showHist ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
+                    <span
+                      onClick={e => { e.stopPropagation(); setHist([]); }}
+                      className="text-[9px] text-white/85 hover:text-white cursor-pointer px-2 py-0.5 rounded border"
+                      style={{ borderColor: 'rgba(255,255,255,.18)', background: 'rgba(255,255,255,.03)' }}
+                    >
+                      清空
+                    </span>
                   </div>
                 </button>
                 {showHist && (
