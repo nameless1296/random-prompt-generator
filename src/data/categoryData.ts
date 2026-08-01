@@ -29,11 +29,11 @@ export const defaultCategories: TagCategory[] = [
         tags: [
           'female focus','male focus','androgynous','genderswap',
           'genderswap (mtf)','genderswap (ftm)','otoko no ko','josou seme',
-          'tomboy','loli','shota','milf','dilf',
-          'mature female','mature male','young girl','young boy',
+          'tomboy','milf','dilf',
+          'mature female','mature male',
           'old man','old woman','muscular female','muscular male',
           'chibi','super deformed','personification','no humans',
-          'ambiguous gender','futanari','newhalf',
+          'ambiguous gender',
         ],
       },
       {
