@@ -301,7 +301,7 @@ export default function App() {
         <div className="max-w-[1480px] mx-auto px-5 sm:px-6 lg:px-8 xl:px-10 h-12 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <span className="text-base">🎲</span>
-            <span className="text-[13px] font-bold text-white/90">Danbooru 随机提示词</span>
+            <span className="text-[13px] font-bold text-white/90">Danbooru-style 随机提示词</span>
             <span className="text-[10px] text-white/20 hidden md:inline ml-1">{totalN.toLocaleString()} tags · {TOTAL_RULES.toLocaleString()} rules</span>
           </div>
           <button onClick={() => setNsfw(n => !n)}
@@ -536,7 +536,7 @@ export default function App() {
           </div>
         </div>
         <footer className="mt-6 pt-4 text-center" style={{ borderTop: '1px solid rgba(255,255,255,.10)' }}>
-          <p className="text-[10px] text-white/10">Danbooru Random Prompt Generator · {totalN.toLocaleString()} tags</p>
+          <p className="text-[10px] text-white/10">Danbooru-style Random Prompt Generator · {totalN.toLocaleString()} tags</p>
         </footer>
       </div>
     </div>
