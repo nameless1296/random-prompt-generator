@@ -304,6 +304,11 @@ export default function App() {
             <span className="text-[13px] font-bold text-white/90">Danbooru-style 随机提示词</span>
             <span className="text-[10px] text-white/20 hidden md:inline ml-1">{totalN.toLocaleString()} tags · {TOTAL_RULES.toLocaleString()} rules</span>
           </div>
+          {/*<button onClick={() => setNsfw(n => !n)}
+            className={`h-7 rounded-full px-2.5 text-[11px] font-semibold flex items-center gap-1.5 border ${nsfw ? 'bg-rose-500/10 border-rose-500/25 text-rose-400' : 'bg-white/[.03] border-white/[.06] text-white/25 hover:text-white/40'}`}>
+            <span className={`w-1.5 h-1.5 rounded-full ${nsfw ? 'bg-rose-500' : 'bg-white/15'}`} />
+            NSFW
+          </button>*/}
         </div>
       </header>
 
