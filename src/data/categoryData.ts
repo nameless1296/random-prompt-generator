@@ -354,7 +354,7 @@ export const defaultCategories: TagCategory[] = [
     id: 'expression',
     name: '表情',
     nameEn: 'Expression',
-    icon: '��',
+    icon: '☺',
     color: '#10B981',
     enabled: true,
     subcategories: [
